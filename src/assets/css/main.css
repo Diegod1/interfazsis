@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url({% static 'fonts/Lato-Light.ttf' %}) format('ttf');
+  font-style: light;
+  font-weight: normal;
+}
+
+.green-area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #00ab4fff;
+    height: 71px;
+    width:100%;
+}
+
+.green-area-logo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#logo-facea{
+    height: 50px;
+    margin-bottom: 9px;
+    margin-top: 15px;
+    margin-right: 84px;
+}
+
+.container-login{
+    margin-left: 40px;
+    width:329px;
+}
+#logo-udenar{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-right: 84px;
+}
+.login-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background-color: #f8f8f8ff;
+}
+
+.text-login{
+  font-family: Lato;
+  color: #9ca4aa;
+  font-size: 15pt;
+}
+
+
+footer{
+    height: 242px;
+    background: #43454bff;
+    width: 100%;
+}

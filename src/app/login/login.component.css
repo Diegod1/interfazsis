@@ -1,0 +1,20 @@
+.login-area{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer{
+  height: 200px;
+}
+
+.hold-transition.login-page {
+  background-image: url(http://sapiens.udenar.edu.co/cdn/images/imagenes_login/2.jpg);
+}
+
+img#logo-udenar {
+  width: 250px;
+}
+
+.card-primary.card-outline {
+  border-top: 3px solid #148440;
+}
