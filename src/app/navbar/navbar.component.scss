@@ -1,0 +1,274 @@
+/* .define-light-theme {
+  background-color: green !important;
+}
+ */
+*{
+  margin: 0;
+  padding: 0;
+}
+.flex-container{
+  display: flex;
+  height: 30px;
+  flex-wrap: nowrap;
+  background-color:#78a782;
+}
+
+.title-module{
+  position: relative;
+  display: flex;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  height: 30px;
+  width: 390.33px;
+  background-color: #14572A;
+
+}
+
+.title-module-text{
+  position: relative;
+  top:2px;
+}
+
+.toolbar-space{
+  position: relative;
+  display: block;
+  background-color:#FBB03B;
+  height: 30px;
+  width:100%;
+  flex-wrap: nowrap;
+  flex-direction: flex-end;
+}
+
+.title-module::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0px;
+  height: 0px;
+  width: 0px;
+  border-top: 15px solid #FBB03B;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #FBB03B;
+  border-bottom: 15px solid transparent;
+  background-color: #14572A;
+}
+
+.icons-content{
+  display: flex;
+
+}
+
+.iconosmenu {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  height:30px;
+  width: 30px;
+}
+
+.iconosmenu:hover {
+  background-color:#E19E35;
+}
+
+.user-menu:hover {
+  background-color:#E19E35;
+  padding-left: 20px;
+  padding-right: 15px;
+
+}
+.user-menu {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+.icons{
+  height:30px;
+  width:50%;
+
+}
+
+.profile{
+  height:30px;
+  width:50%;
+}
+
+.icon-box{
+  height: 20px;
+}
+
+.navbar-nav{
+  align-content:flex-end;
+}
+
+.marleft{
+  position: relative;
+  left:6px;
+}
+
+.marright{
+  position: relative;
+  right:6px;
+}
+
+.panel-body{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+
+
+
+.user-name{
+  font-size: 10pt;
+  color: #fff;
+}
+
+.tpx{
+  height:30px;
+}
+
+.panel{
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+  background-color:#78a782;
+  overflow: hidden;
+}
+
+.hidden-sidenav{
+  display: none;
+}
+
+.sidenav{
+  display: inline-block;
+  width: 230px;
+  background-color: #003444;
+  min-height:  100vh;
+  flex-shrink: 0;
+}
+
+.contentpanel{
+  display: flex;
+  background-color: #E19E35;
+  width: 100%;
+}
+
+.link-menu:hover{
+  display: flex;
+  background-image: linear-gradient(to bottom right,#00923F,#14572A);
+  height: 43.05px;
+  padding: 12px 5px 12px 12px;
+  border-left: 3px solid #FBB03B;
+  align-items: center
+}
+
+.link-menu{
+  display: flex;
+  height: 43.05px;
+  color: white;
+  padding: 12px 5px 12px 15px;
+  text-transform:uppercase;
+  align-items: center
+}
+
+.text{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  background-color:#00232e;
+  height: 39.05px;
+  color: white;
+
+}
+
+.copyright{
+  display:flex;
+  height: 45px;
+  align-items:center;
+  justify-content: center;
+  background-color:#ffffff;
+  color: gray;
+  width: 100%;
+
+}
+
+.center-icon{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+ul{
+  width: 100%;
+}
+
+@media(max-width: 768px){
+  .title-module{
+    display: none;
+  }
+
+  .sidenav{
+    display: flex;
+    position: absolute;
+    width: 230px;
+    background-color: #003444;
+  }
+
+  .flex-container{
+    display: flex;
+    height: 43.05px;
+    flex-wrap: nowrap;
+    background-color:#78a782;
+  }
+
+  .toolbar-space{
+    position: relative;
+    display: block;
+    background-color:#FBB03B;
+    height: 43.05px;
+    width:100%;
+    flex-wrap: nowrap;
+    flex-direction: flex-end;
+  }
+
+  .iconosmenu {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    height:43.05px;
+    width: 43.05px;
+  }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height:43.05px;
+    background-color:#FBB03B;
+  }
+
+  .icon-box{
+    height: 40px;
+  }
+
+  .tpx{
+    height: 43.5px;
+  }
+
+  .text{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background-color:#00232e;
+    height: 39.05px;
+    width:100%;
+    color: white;
+
+  }
+
+
+}

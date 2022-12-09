@@ -1,0 +1,88 @@
+<nav class="flex-container navbar">
+  <div class="title-module">
+    <div class="title-module-text"><i>Practicas Empresariales</i></div>
+  </div>
+  <div class="toolbar-space">
+    <div class="icons-content">
+      <div class="icons">
+        <ul class="marleft tpx">
+          <li class="iconosmenu">
+            <a class="center-icon" (click)="toggle()">
+              <img
+                class="icon-box"
+                src="http://sapiens.udenar.edu.co/cdn/images/contraer.svg"
+              />
+            </a>
+          </li>
+          <li class="iconosmenu">
+            <a class="center-icon" href="#">
+              <img
+                class="icon-box"
+                src="http://sapiens.udenar.edu.co/cdn/images/menu.svg"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="profile marright">
+        <ul class="nav navbar-nav tpx">
+          <li class="dropdown user user-menu open tpx">
+            <a href="#">
+              <span class="hidden-xs user-name ng-binding"
+                >DIEGO DELGADO&nbsp;&nbsp;</span
+              >
+              <img
+                class="icon-box"
+                src="http://sapiens.udenar.edu.co/cdn/images/avatar.svg"
+              />
+            </a>
+            <ul class="dropdown-menu tpx">
+              <li class="user-header">
+                <img
+                  src="http://sapiens.udenar.edu.co/cdn/images/avatar.svg"
+                  class="img-circle"
+                  alt="User Image"
+                />
+                <p class="ng-binding">
+                  DIEGO DELGADO
+                  <small class="ng-binding">Usuario: 1085312659</small>
+                </p>
+              </li>
+              <li class="user-footer">
+                <div class="pull-right">
+                  <a href="#" class="link-user-footer conHover"
+                    >Cerrar sesión</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--panel-->
+<div class="panel">
+  <div class="panel-body">
+    <div [className]="this.activePanel ? 'sidenav' : 'hidden-sidenav'">
+      <ul>
+        <li><div class="text">Practicante</div></li>
+        <li>
+          <div><a class="link-menu"><i class="ion ion-pie-graph"></i>&nbsp;Encuestas</a></div>
+        </li>
+        <li><a class="link-menu">Documentos</a></li>
+        <li><a class="link-menu">Mi práctica</a></li>
+        <li><a class="link-menu">Encuestas</a></li>
+      </ul>
+    </div>
+    <div class="contentpanel">
+      <router-outlet></router-outlet>
+      <div class="copyright">
+        Universidad De Nariño 2022
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--panel-->

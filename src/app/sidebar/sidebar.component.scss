@@ -1,0 +1,31 @@
+.example-container {
+
+  width: 100%;
+  height: 1000pt;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-content{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.example-sidenav {
+  padding: 20px;
+  background-color: #003444;
+  border: 0px;
+}
+
+.example-container{
+  border:0px solid rgba(0, 0, 0, 0.5);
+}
+
+.tpx{
+  height: 30px;
+}
