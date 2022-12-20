@@ -69,20 +69,35 @@
       <ul>
         <li><div class="text">Practicante</div></li>
         <li>
-          <div><a class="link-menu"><i class="ion ion-pie-graph"></i>&nbsp;Encuestas</a></div>
+          <div>
+            <a class="nav-link link-menu" [routerLink]="['./encuestas']" [routerLinkActive]="'active'"
+              ><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Encuestas</a
+            >
+          </div>
         </li>
-        <li><a class="link-menu">Documentos</a></li>
-        <li><a class="link-menu">Mi práctica</a></li>
-        <li><a class="link-menu">Encuestas</a></li>
+        <li>
+          <a class="nav-link link-menu" routerLink="./documentos" [routerLinkActive]="'active'"
+              ><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Documentos</a
+          >
+        </li>
+        <li>
+          <a class="nav-link link-menu" routerLink="/panel/encuestas" [routerLinkActive]="'active'"
+              ><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Mi práctica</a
+          >
+        </li>
+        <li>
+          <a class="nav-link link-menu" routerLink="/login" [routerLinkActive]="'active'"
+              ><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Encuestas</a
+          >
+        </li>
       </ul>
     </div>
     <div class="contentpanel">
       <router-outlet></router-outlet>
-      <div class="copyright">
-        Universidad De Nariño 2022
-      </div>
 
+      <div class="copyright">Universidad De Nariño 2022</div>
     </div>
   </div>
 </div>
+<!--panel-->
 <!--panel-->

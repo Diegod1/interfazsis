@@ -151,13 +151,23 @@
 
 .contentpanel{
   display: flex;
-  background-color: #E19E35;
+  flex-direction:column;
+  background-color: #f4f4f4;
   width: 100%;
 }
 
 .link-menu:hover{
   display: flex;
   background-image: linear-gradient(to bottom right,#00923F,#14572A);
+  height: 43.05px;
+  padding: 12px 5px 12px 12px;
+  border-left: 3px solid #FBB03B;
+  align-items: center
+}
+
+.link-menu:active{
+  display: flex;
+  //background-image: linear-gradient(to bottom right,#00232e,#00212b);
   height: 43.05px;
   padding: 12px 5px 12px 12px;
   border-left: 3px solid #FBB03B;
@@ -214,6 +224,7 @@ ul{
     position: absolute;
     width: 230px;
     background-color: #003444;
+    z-index: 1;
   }
 
   .flex-container{

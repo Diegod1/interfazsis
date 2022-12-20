@@ -22,13 +22,15 @@ import { JwtInterceptorService } from './jwt-interceptor.interceptor';
 import { TimeInterceptor } from './interceptors/time.interceptor';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { UdenarHeaderComponent } from './headers/udenar-header.component';
 //sidenav
 import { LayoutModule } from '@angular/cdk/layout';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatCardModule } from '@angular/material/card';
-import { EncuestasComponent } from './navbar/pages/encuestas/encuestas.component';
+import { EncuestasComponent } from './shared/dashboard/pages/encuestas/encuestas.component';
+import { DocumentosComponent } from './shared/dashboard/pages/documentos/documentos.component';
+import { GraficosComponent } from './shared/dashboard/pages/graficos/graficos.component';
+import { AsignacionesComponent } from './shared/dashboard/pages/asignaciones/asignaciones.component';
+import { AsigEstComponent } from './shared/dashboard/pages/asig-est/asig-est.component';
 
 @NgModule({
   declarations: [
@@ -36,10 +38,12 @@ import { EncuestasComponent } from './navbar/pages/encuestas/encuestas.component
     LoginComponent,
     PanelComponent,
     NavbarComponent,
-    SidebarComponent,
     UdenarHeaderComponent,
-    DashboardComponent,
-    EncuestasComponent
+    EncuestasComponent,
+    DocumentosComponent,
+    GraficosComponent,
+    AsignacionesComponent,
+    AsigEstComponent
   ],
   imports: [
     BrowserModule,
