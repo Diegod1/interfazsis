@@ -28,7 +28,7 @@ export class ApiService {
 
   login(username: string, password: string) {
 
-    return this.http.post<ResponseI>(`${this.apiUrl}/api/token`, {"username":"1085312659","password":"123"})
+    return this.http.post<ResponseI>(`${this.apiUrl}/api/token/`, {"username":"1085312659","password":"123"})
     .pipe(
       tap(response => this.tokenService.saveToken(response.access)),
     );

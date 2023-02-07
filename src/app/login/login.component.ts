@@ -17,9 +17,10 @@ import { TokenService } from './../services/token.service';
 })
 export class LoginComponent implements OnInit {
   loginForm = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
+    username: new FormControl('',[Validators.required]),
+    password: new FormControl('',[Validators.required]),
   });
+
   private apiUrl = `${environment.API_URL}`;
 
   constructor(private apiService: ApiService, private router: Router,private http: HttpClient,private tokenService: TokenService) {}
@@ -28,16 +29,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onLogin() {
-    console.log("gjhggggggggggggggggg");
-    return this.http.post<ResponseI>("/api/token",{username,password})
-    .pipe(
-      tap(response => this.tokenService.saveToken(response.access)),
-    );
 
-/*     this.apiService.loginAndGet('1085312659', '123')
+    this.apiService.loginAndGet('1085312659', '123')
     .subscribe(() => {
       this.router.navigate(['/panel']);
-    }); */
+    }); 
   }
 
   logout() {

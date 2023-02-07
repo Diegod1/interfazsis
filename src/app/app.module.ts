@@ -14,6 +14,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { NgChartsModule } from 'ng2-charts';
 
 
 
@@ -60,7 +61,8 @@ import { AsigEstComponent } from './shared/dashboard/pages/asig-est/asig-est.com
     MatSidenavModule,
     MatListModule,
     LayoutModule,
-    MatCardModule
+    MatCardModule,
+    NgChartsModule
   ],
   exports: [
 
